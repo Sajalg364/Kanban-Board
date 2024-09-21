@@ -1,38 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 0.2rem 0.6rem;
+  margin: 0.5rem 1.2rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.display-icon {
+  margin-right: 0.5rem;
+}
+
+.display-icon2 {
+  margin-left: 0.5rem;
+}
+
+.dropbtn:hover {
+  background-color: rgb(242, 237, 237);
+}
+
+.dropdown-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 0.5rem 1.2rem;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f9;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  width: 15rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.di-label {
+  color: rgb(111, 111, 111);
+}
+
+.di-select {
+  /* padding: 1rem; */
+}
+
+.menu label {
+  margin-right: 10px;
+}
+
+.menu select {
+  margin-right: 20px;
+  padding: 0.1rem;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: 50rem;
+  background-color: #f5f5f5;
+}
+
+.column {
+  flex: 1;
+  /* background-color: #e0e0e0; */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ticket {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text-muted {
+  color: rgb(111, 111, 111);
+}
+
+.mr {
+  margin-right: 0.5rem;
+}
+
+.shadow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rounded {
+  background-color: rgb(219, 219, 219);
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
